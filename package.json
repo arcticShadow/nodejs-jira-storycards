@@ -1,5 +1,5 @@
 {
-  "name": "Jira Card Printer",
+  "name": "jiracardprinter",
   "version": "0.0.1",
   "description": "Connect to jira via rest api and pulls issues to format story cards and outputs as pdf for printing.",
   "main": "app.js",

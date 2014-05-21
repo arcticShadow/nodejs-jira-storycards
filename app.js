@@ -1,4 +1,4 @@
-var MyJira = require('./src/MyJira');
+
 var request = require('request');
 var _ = require('underscore');
 var Q = require("q");
@@ -46,12 +46,11 @@ var issues;
 
 function listJiraIssues(){
 
-	console.log("User: "+user+" password: "+pass);
 	
 	requestArgs.auth= {
-	    'user': user,
-	    'pass': pass,
-	    'sendImmediately': true
+      'user': user,
+      'pass': pass,
+      'sendImmediately': true
   	};
 
         var uri = jiraURL + 'rest/api/2/';
@@ -62,22 +61,23 @@ function listJiraIssues(){
 		pointsField = _.findWhere(data,{'name':'Story Points'}).id;
 		
 		return qRequest(_.extend({
-			'url': uri + 'search?jql=key+=+IW-54+OR+key+=+IW-53&fields=id,key,issuetype,summary,project' + epicField + ',' + pointsField + ',description'
+			'url': uri + 'search?jql='
+                       + 'sprint%20%3D%205%20and%20status%20in(%20ready%2C%20"To%20Do"%2C"Work%20In%20Progress"%2C%20Open%20)%20and%20issuetype%20%3D%20story'
+	            	   + '&fields=id,key,issuetype,summary,project' + epicField + ',' + pointsField + ',description'
 		}, requestArgs));
 	})
 	.then(function(data){
 		issues = data.issues;
-		var pdfDoc = new PDFDocument();
+		var pdfDoc = new PDFDocument({
+				size: [	 12.7 / 2.54 * 72, // 2.54 to convert cm to inch
+						 7.6 / 2.54* 72 ], // *72 for pdf pixels as per documentation
+				margin: 10
+			});
 		pdfDoc.pipe( fs.createWriteStream('cards.pdf') );
 		
 		
  		_.each(issues, function(issue, index, list){
 			
-			pdfDoc.addPage({
-				size: [	 12.7 / 2.54 * 72, // 2.54 to convert cm to inch
-						 7.6 / 2.54* 72 ], // *72 for pdf pixels as per documentation
-				margin: 10
-			});
 			// organise points or placeholder
 			var points = issue.fields[pointsField]?(issue.fields[pointsField] + " points"):"No Points Assigned";
 
@@ -95,6 +95,14 @@ function listJiraIssues(){
 			pdfDoc.fontSize(16);
 			pdfDoc.text(issue.key, 10, 10, {align:'right'});
 			//console.log(issue.fields);
+
+			// add new page if required
+			if(index != list.length - 1)
+			pdfDoc.addPage({
+				size: [	 12.7 / 2.54 * 72, // 2.54 to convert cm to inch
+						 7.6 / 2.54* 72 ], // *72 for pdf pixels as per documentation
+				margin: 10
+			});
 		});
 		pdfDoc.end();
 	})
