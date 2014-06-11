@@ -14,18 +14,22 @@ var i = require('./src/getInput');
 
 var Input = new i.Input();
 
-var user, pass;
+var user, pass, jql;
 
-Input.on('inputCollected',function(u){
+Input.once('inputCollected',function(u){
 	user = u;
 	Input.getPassword(null, 'Jira Passowrd for ' + user + ': ');
 });
-Input.on('passwordCollected',function(p){
+Input.once('passwordCollected',function(p){
 	pass = p;
 	// List Jira Projects
 	
-	//list issues
-	listJiraIssues();
+        Input.once('inputCollected',function(j){
+ 		jql = j;
+		//list issues
+		listJiraIssues();
+        });
+	Input.getInput(null, 'Jira JQL: ');
 });
 
 // Kick Things off.
@@ -62,8 +66,9 @@ function listJiraIssues(){
 		
 		return qRequest(_.extend({
 			'url': uri + 'search?jql='
-                       + 'sprint%20%3D%205%20and%20status%20in(%20ready%2C%20"To%20Do"%2C"Work%20In%20Progress"%2C%20Open%20)%20and%20issuetype%20%3D%20story'
-	            	   + '&fields=id,key,issuetype,summary,project' + epicField + ',' + pointsField + ',description'
+                       //+ 'key%3DWU-30%20or%20key%20%3D%20WU-33%20or%20key%20%3D%20WU-38%20or%20key%20%3D%20WU-39'
+	            	+ jql
+			   + '&fields=id,key,issuetype,summary,project' + epicField + ',' + pointsField + ',description'
 		}, requestArgs));
 	})
 	.then(function(data){
