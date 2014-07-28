@@ -23,7 +23,7 @@ Input.once('inputCollected',function(u){
 Input.once('passwordCollected',function(p){
 	pass = p;
 	// List Jira Projects
-	
+
         Input.once('inputCollected',function(j){
  		jql = j;
 		//list issues
@@ -63,10 +63,9 @@ function listJiraIssues(){
 	.then(function(data){
 		epicField = _.findWhere(data,{'name':'Epic Link'}).id;
 		pointsField = _.findWhere(data,{'name':'Story Points'}).id;
-		
+
 		return qRequest(_.extend({
 			'url': uri + 'search?jql='
-                       //+ 'key%3DWU-30%20or%20key%20%3D%20WU-33%20or%20key%20%3D%20WU-38%20or%20key%20%3D%20WU-39'
 	            	+ jql
 			   + '&fields=id,key,issuetype,summary,project' + epicField + ',' + pointsField + ',description'
 		}, requestArgs));
@@ -127,7 +126,7 @@ function qRequest(options) {
     	err = new Error("No options in request");
     	deferred.reject(err);
     }
-    
+
     request(options, function (err, res, body) {
         if (err) {
             deferred.reject(new Error(err));
