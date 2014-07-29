@@ -1,6 +1,8 @@
 function Input(){
 
 };
+
+var Q = require("q");
 var EventEmitter = require('events').EventEmitter;
 var util = require('util');
 
@@ -48,7 +50,7 @@ getInput = function(callback, prompt, obfuscate) {
 
   process.stdin.resume();
   process.stdin.setEncoding('utf8');
-  process.stdin.setRawMode(true);  
+  process.stdin.setRawMode(true);
   password = '';
   process.stdin.removeAllListeners('data');
   process.stdin.on('data', function (char) {
@@ -61,7 +63,7 @@ getInput = function(callback, prompt, obfuscate) {
       process.stdout.write("\n");
       process.stdin.pause();
       callback(password);
-      
+
       //process.exit()
       break
     case "\u0003":
@@ -70,7 +72,7 @@ getInput = function(callback, prompt, obfuscate) {
       process.exit()
       break
     default:
-      // More passsword characters
+      // More characters
       if(obfuscate){
         process.stdout.write('*');
       } else {
@@ -80,6 +82,21 @@ getInput = function(callback, prompt, obfuscate) {
       break
     }
   });
+}
+
+ Input.prototype.qGetInput = function(options) {
+  var deferred = Q.defer();
+  if(!options || options.prompt ==undefined|| options.obfuscate == undefined){
+    err = new Error("No options in request. Options must contian 'obfuscate' and 'prompt'");
+    deferred.reject(err);
+  }
+
+  getInput(function(value){
+    deferred.resolve(value);
+  }, options.prompt, options.obfuscate)
+
+  return deferred.promise;
+
 }
 
 module.exports.Input =  Input;
