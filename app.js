@@ -9,6 +9,9 @@ var nconf = require('nconf');
 // Setup NConf
 nconf.argv().env().file({ file: 'config.json' })
 
+nconf.defaults({
+	"jiraAPIPath": "rest/api/2/"
+});
 
 
 var i = require('./src/getInput');
@@ -18,7 +21,6 @@ var Input = new i.Input();
 var user = nconf.get('user'),
 	pass = nconf.get('password'),
 	jql = nconf.get('jql');
-
 
 var getUserPromise = function(){
 
@@ -101,11 +103,12 @@ function getJiraCards(){
 	.then(function(data){
 		epicField = _.findWhere(data,{'name':'Epic Link'}).id;
 		pointsField = _.findWhere(data,{'name':'Story Points'}).id;
+		resolutionField = _.findWhere(data,{'name':'Resolution'}).id;
 
 		return qRequest(_.extend({
 			'url': uri + 'search?jql='
 	            	+ jql
-			   + '&fields=id,key,issuetype,summary,project' + epicField + ',' + pointsField + ',description'
+			   + '&fields=id,key,issuetype,summary,project' + epicField + ',' + pointsField + ',description,status,'+resolutionField
 		}, requestArgs));
 	})
 	.then(function(data){
@@ -128,11 +131,14 @@ function getJiraCards(){
 			pdfDoc.text(issue.fields.summary,{
 				width: 17 / 2.54 * 72
 			});
-			pdfDoc.fontSize(16);
+			pdfDoc.fontSize(10);
 			pdfDoc.text(
 				"(" + issue.fields.issuetype.name +") " +
 				//"" + issue.key + " | " +
 				points);
+			pdfDoc.text("Status: " + issue.fields.status.name);
+			//pdfDoc.text("  Resoultion: " + issue.fields.resoultion);
+			//console.log(issue.fields);
 			pdfDoc.moveDown();
 			pdfDoc.fontSize(14);
 			pdfDoc.text((issue.fields.description||"").replace(new RegExp("\r",'g'),""));
