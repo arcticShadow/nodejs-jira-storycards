@@ -6,12 +6,9 @@ var PDFDocument = require('pdfkit');
 var fs = require('fs');
 var nconf = require('nconf');
 
-// Setup NConf]
+// Setup NConf
 nconf.argv().env().file({ file: 'config.json' })
 
-var log  = function(data){
-	console.log(data);
-};
 
 
 var i = require('./src/getInput');
@@ -74,18 +71,17 @@ Q(getUserPromise())
 
 
 
-var jiraURL = 'http://jira.orion.internal/';
+
+
 
 // field name of epic
 var epicField;
 //issue list
 var issues;
 
-//NA Cards
-//size: [	 12.7 / 2.54 * 72, // 2.54 to convert cm to inch
-				//		 7.6 / 2.54* 72 ], // *72 for pdf pixels as per documentation
 var sizeArray = [	21 / 2.54 * 72, 	// 2.54 to convert cm to inch
 			 		14.8 / 2.54* 72 ];	// *72 for pdf pixels as per documentation
+
 function getJiraCards(){
 
 	var requestArgs = {
@@ -98,7 +94,8 @@ function getJiraCards(){
       'sendImmediately': true
   	};
 
-    var uri = jiraURL + 'rest/api/2/';
+    var uri = nconf.get('jiraBaseURL') + nconf.get('jiraAPIPath');
+
 
 	qRequest( _.extend({'url': uri + 'field'}, requestArgs) )
 	.then(function(data){
@@ -142,7 +139,7 @@ function getJiraCards(){
 
 			pdfDoc.fontSize(20);
 			pdfDoc.text(issue.key, 10, 10, {align:'right'});
-			//console.log(issue.fields);
+
 
 			// add new page if required
 			if(index != list.length - 1)
@@ -156,8 +153,6 @@ function getJiraCards(){
 	.done();
 
 }
-
-
 
 
 
