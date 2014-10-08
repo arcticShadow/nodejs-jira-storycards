@@ -1,0 +1,593 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"summary"
+			],
+			[
+				"pro",
+				"promise"
+			],
+			[
+				"cert",
+				"certificate"
+			],
+			[
+				"wor",
+				"worked"
+			],
+			[
+				"con",
+				"componentConfig"
+			],
+			[
+				"Clas",
+				"componentClassName"
+			],
+			[
+				"Nam",
+				"componentNamespace"
+			],
+			[
+				"component",
+				"componentClassName"
+			],
+			[
+				"requ",
+				"request"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"Sta",
+				"Status"
+			],
+			[
+				"get",
+				"getUserPromise"
+			],
+			[
+				"al",
+				"all"
+			],
+			[
+				"cal",
+				"calendarElement"
+			],
+			[
+				"new",
+				"newTextareaHeight"
+			],
+			[
+				"max",
+				"maxHeight"
+			],
+			[
+				"min",
+				"minHeight"
+			],
+			[
+				"clone",
+				"cloneHeight"
+			],
+			[
+				"scroll",
+				"scrollHeight"
+			],
+			[
+				"sc",
+				"scrollHeight"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"content",
+				"contentHeight"
+			],
+			[
+				"clear",
+				"clearanceHeight"
+			],
+			[
+				"is",
+				"isAncestor"
+			],
+			[
+				"a",
+				"ancestor"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/qRequest.js",
+			"settings":
+			{
+				"buffer_size": 692,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"command_palette":
+	{
+		"height": 147.0,
+		"selected_items":
+		[
+			[
+				"jshin",
+				"JSHint: Set Plugin Options"
+			],
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ssjas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssj",
+				"Set Syntax: Jade"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"prettify",
+				"HTMLPrettify"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ssapp",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"collap",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/coledi/Private/Projects/nodejs-jira-storycards",
+		"/Users/coledi/Private/Projects/nodejs-jira-storycards/src"
+	],
+	"file_history":
+	[
+		"/Users/coledi/Private/Projects/nodejs-jira-storycards/storycards.sublime-project",
+		"/Users/coledi/Private/Projects/nodejs-jira-storycards/app.js",
+		"/Users/coledi/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/Users/coledi/Private/Projects/nodejs-jira-storycards/node_modules/request/node_modules/tough-cookie/test.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/views/index.jade",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/css/styles.styl",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/css/page.styl",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/public/css/styles.css",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/public/css/video.css",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/node_modules/mysignalmaster/server.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/lib/basic-express-app/index.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/css/video.styl",
+		"/Users/coledi/Private/Projects/signalmaster/server.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/node_modules/mysignalmaster/package.json",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/index.html",
+		"/Users/coledi/Private/Projects/twitter-bootstrap-node/app.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/public/js/app.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/js/app.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/public/vendor/bootstrap/css/bootstrap-theme.css",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/css/vendor/twitter/bootstrap/bootstrap.less",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/simplewebrtc.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/latest.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/build.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/CONTRIBUTING.md",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/SECURITY.md",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/simplewebrtc.sublime-project",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/js/simplewebrtc.js",
+		"/Users/coledi/Private/Projects/node-site-express/views/layout/full.jade",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/public/js/simplewebrtc.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/simplewebrtc.bundle.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/socket.io.js",
+		"/Users/coledi/Private/Projects/SimpleWebRTC/node_modules/socket.io-client/dist/socket.io.js",
+		"/Users/coledi/Projects/Parliament/font-awesome/FontAwesome/version.properties",
+		"/Users/coledi/Projects/Parliament/yui-3/YUI-3/version.properties",
+		"/Users/coledi/Projects/Parliament/common-web/Common-Web/com.orchestral.commonweb/META-INF/MANIFEST.MF",
+		"/Users/coledi/Projects/Parliament/component-dashboard/Component-Dashboard/com.orchestral.componentdashboard.web/web/config.json",
+		"/Users/coledi/Projects/Parliament/common-web/Common-Web/version.properties",
+		"/Users/coledi/Projects/Parliament/component-dashboard/pb2/web/nodejs/lib/node_modules/grover/node_modules/istanbul/test/cli/sample-project/amd/lorem.js",
+		"/Users/coledi/Projects/Parliament/common-web/Common-Web/build/yuitest-web/yui3/loader-rollup/loader-rollup.js",
+		"/Users/coledi/Projects/Parliament/component-dashboard/pb2/web/nodejs/lib/node_modules/yuidocjs/output/api/files/lib_options.js.html",
+		"/Users/coledi/Projects/Parliament/component-dashboard/pb2/web/nodejs/LICENSE",
+		"/Users/coledi/Projects/Parliament/component-dashboard/pb2/web/nodejs/lib/node_modules/grover/tests/2-coverage.js",
+		"/Users/coledi/Projects/Parliament/yui-2in3/version.properties",
+		"/Users/coledi/Projects/Parliament/yui-2/version.properties",
+		"/Users/coledi/Downloads/log.txt",
+		"/Users/coledi/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/coledi/Projects/Parliament/component-dashboard/Component-Dashboard/com.orchestral.componentdashboard.web/src/main/web/index.jsp",
+		"/Users/coledi/Projects/gallery/Gallery/com.orchestral.gallery.web/src/main/web/ohg-generic-table/js/ohg-generic-table.js",
+		"/Users/coledi/Projects/gallery/Gallery/com.orchestral.gallery.web/web/ohg-html-content-component/ohg-html-content-component-debug.js",
+		"/Users/coledi/Projects/gallery/Gallery/com.orchestral.gallery.web/src/main/web/ohg-html-content-component/js/ohg-html-content-component.js",
+		"/Users/coledi/Projects/Parliament/component-dashboard/Component-Dashboard/com.orchestral.componentdashboard.web/src/main/web/js/dashboard.js",
+		"/Users/coledi/Projects/gallery/GalleryTest/com.orchestral.gallery.test.web/web/generic-table/index.jsp",
+		"/Users/coledi/Projects/Parliament/common-web/Common-Web/com.orchestral.commonweb/src/main/web/ohp-component/js/ohp-component.js",
+		"/Users/coledi/Projects/gallery/GalleryTest/com.orchestral.gallery.test.web/web/html-content-component/index.jsp",
+		"/Users/coledi/Projects/Parliament/component-dashboard/Component-Dashboard/com.orchestral.componentdashboard.web/web/js/dashboard.js",
+		"/Users/coledi/Projects/solution_quickstart/packaged-solution/solution_quickstart_coledi/hiera/TODO-generate-svi/infrastructure.yaml",
+		"/Users/coledi/Projects/solution_quickstart/graviton.log",
+		"/Users/coledi/Private/Projects/OrionBlogExtra.js",
+		"/Users/coledi/Private/Projects/site-drupal-cvtube/sites/all/modules/custom/ht_business_for_sale/ht_business_for_sale.module",
+		"/Users/coledi/Private/Projects/site-drupal-cvtube/sites/all/modules/custom/ht_jobs/ht_jobs.module",
+		"/Users/coledi/Private/Projects/userscript-Trello-Jira-Sync/speech.js",
+		"/Users/coledi/Private/Projects/nodejs-jira-storycards/.gitignore",
+		"/Users/coledi/bin/activateUSBHeadset.applescript",
+		"/Users/coledi/Projects/TestScss/testConditionalImport.css",
+		"/Users/coledi/Private/Projects/app-nzwine/app/views/favourites.xml",
+		"/Users/coledi/Private/Projects/app-nzwine/app/views/index.xml",
+		"/Users/coledi/Private/Projects/app-nzwine/app/controllers/index.js",
+		"/Users/coledi/Private/Projects/app-nzwine/platform/android/res/values/custom.xml",
+		"/Users/coledi/Private/Projects/app-nzwine/tiapp.xml",
+		"/Users/coledi/Private/Projects/app-nzwine/README",
+		"/Users/coledi/Private/Projects/app-nzwine/app/controllers/favourites.js",
+		"/Users/coledi/Private/Projects/app-nzwine/app/styles/index.tss",
+		"/Users/coledi/Private/Projects/app-nzwine/app/styles/app.tss",
+		"/Users/coledi/Private/Projects/app-nzwine/Resources/app.js",
+		"/Users/coledi/Private/Projects/app-nzwine/app/config.json",
+		"/Users/coledi/Private/Projects/app-nzwine/app/alloy.js",
+		"/Users/coledi/Projects/Parliament/common-web/Common-Web/com.orchestral.commonweb/src/test/yuitest/ohp-app-nester-test.html",
+		"/Users/coledi/Projects/Parliament/common-web/OHPWebTest/com.orchestral.commonweb.test.web/src/main/web/datetime/datetime-jsp-tags.jsp",
+		"/Users/coledi/Projects/Parliament/common-web/Common-Web/com.orchestral.commonweb/src/main/web/lightbox/lightbox.js",
+		"/Users/coledi/Projects/Parliament/common-web/Common-Web/com.orchestral.commonweb/src/main/web/datetime/datetime.js",
+		"/Users/coledi/Projects/Parliament/common-web/OHPWebTest/com.orchestral.commonweb.test.web/src/main/web/datetime/date.jsp",
+		"/Users/coledi/Projects/Parliament/yui-2/com.yahoo.yui2/src/main/web/dom/dom.js",
+		"/Users/coledi/Projects/Parliament/common-web/Common-Web/com.orchestral.commonweb/src/main/web/datetime/assets/calendar.html",
+		"/Users/coledi/Projects/Parliament/common-web/OHPWebTest/com.orchestral.commonweb.test.web/web/breadcrumb/bc.jsp",
+		"/Users/coledi/Projects/Parliament/common-web/OHPWebTest/com.orchestral.commonweb.test.web/src/main/web/breadcrumb/bc.jsp",
+		"/Users/coledi/Projects/Parliament/common-web/Common-Web/com.orchestral.commonweb/web/ohp-breadcrumb/ohp-breadcrumb.js",
+		"/Users/coledi/Downloads/USAGE.md",
+		"/Users/coledi/Projects/Parliament/common-web/pb2.properties",
+		"/Users/coledi/Downloads/README.md",
+		"/Users/coledi/Projects/Parliament/common-web/README.md",
+		"/Users/coledi/Downloads/apache-ant-1.9.2-odl/INSTALL"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/coledi/Projects/solution_quickstart",
+			"*.module",
+			"*.xml"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"error",
+			"Input",
+			"url",
+			"dev_config",
+			"dev_config'",
+			"server",
+			"success",
+			"pc_config.iceServers",
+			"requestTurn",
+			"turn server",
+			"requestTurn",
+			"io",
+			"yui",
+			"modernizr",
+			"},{",
+			"loadComponent",
+			"loadConstructAndRenderComponent",
+			"OHG_GEN",
+			"WvHf_",
+			"ConcertoDocumentRepository",
+			"qRequest",
+			"ht_business_for_sale_listing_period",
+			"variable_get",
+			"listing_length",
+			"ht_jobs_listing_period",
+			"variable_get",
+			"variable_set",
+			"log",
+			".all",
+			"card",
+			"Trello",
+			"require",
+			"getVisi",
+			"OrchestralCalendar",
+			"elementFocus",
+			"select",
+			"selectHandler",
+			"selectEvent",
+			"selectHandler",
+			"_clone",
+			"flush",
+			"_clone",
+			"console",
+			"_clone",
+			"textarea",
+			"ua",
+			"subscribe",
+			"close",
+			"get:",
+			"_onElementFocus",
+			"focusFirst",
+			"_createCalendar",
+			"ORCHESTRAL.widget.DateTime",
+			"layout",
+			"createEvent",
+			"create\ncreate",
+			"create",
+			"_updateView",
+			"OrchestralDate",
+			"focus",
+			"dateTimeChanged",
+			"dateTimeChangedEvent",
+			"_updateView"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/qRequest.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								325,
+								325
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 122.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 280.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"project": "storycards.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"I",
+				"IDN"
+			]
+		],
+		"width": 728.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 283.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

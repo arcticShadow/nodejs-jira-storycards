@@ -1,6 +1,4 @@
-function Input(){
-
-};
+var Input = {};
 
 var Q = require("q");
 var EventEmitter = require('events').EventEmitter;
@@ -9,7 +7,7 @@ var util = require('util');
 util.inherits(Input, EventEmitter);
 
 // Get a password from the console, printing stars while the user types
-Input.prototype.getPassword = function(callback, prompt) {
+Input.getPassword = function(callback, prompt) {
   var current = this;
   var passwordReceivedCallback = function(data){
     current.emit('passwordCollected',data);
@@ -19,7 +17,7 @@ Input.prototype.getPassword = function(callback, prompt) {
   }
   getInput(passwordReceivedCallback, prompt, true);
 };
-Input.prototype.getInput = function(callback, prompt) {
+Input.getInput = function(callback, prompt) {
   var current = this;
   var inputReceivedCallback = function(data){
     current.emit('inputCollected',data);
@@ -84,7 +82,7 @@ getInput = function(callback, prompt, obfuscate) {
   });
 }
 
- Input.prototype.qGetInput = function(options) {
+ Input.qGetInput = function(options) {
   var deferred = Q.defer();
   if(!options || options.prompt ==undefined|| options.obfuscate == undefined){
     err = new Error("No options in request. Options must contian 'obfuscate' and 'prompt'");
@@ -99,4 +97,4 @@ getInput = function(callback, prompt, obfuscate) {
 
 }
 
-module.exports.Input =  Input;
+module.exports = Input;

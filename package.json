@@ -4,6 +4,7 @@
   "description": "Connect to jira via rest api and pulls issues to format story cards and outputs as pdf for printing.",
   "main": "app.js",
   "dependencies": {
+    "colors": "^1.0.2",
     "nconf": "^0.6.9",
     "pdfkit": "~0.6.2",
     "q": "~1.0.1",
